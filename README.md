@@ -234,7 +234,7 @@ consul agent -server -bind=172.16.81.129 \
 
 - 访问任意一个节点的web ui,可以看到正常运行的三个节点
 
-![Aaron Swartz](https://gitlab.using.site/zhangxf/consul_test/raw/master/img/consul_cluster.png)
+![Aaron Swartz](https://github.com/zxxxf/consul_test/raw/master/img/consul_cluster.png)
 
 - 使用模块python-consul通过api进行服务注册。在每个server上启动测试服务并注册。
 
@@ -269,7 +269,7 @@ c.agent.service.deregister(service_id)
 
 - 打开web ui查看已经注册的服务状况
 
-![Aaron Swartz](https://gitlab.using.site/zhangxf/consul_test/raw/master/img/consul_services.png)
+![Aaron Swartz](https://github.com/zxxxf/consul_test/raw/master/img/consul_services.png)
 
 - 选取一个节点作为客户端，以node1为例安装nginx和consul-template
 
@@ -316,7 +316,7 @@ sudo consul-template -template "./consul.ctmpl:/usr/local/nginx/conf/conf.d/test
 
 此时可以访问172.16.81.1：9000访问web ui
 
-![Aaron Swartz](https://gitlab.using.site/zhangxf/consul_test/raw/master/img/consul_nginx_web_ui.png)
+![Aaron Swartz](https://github.com/zxxxf/consul_test/raw/master/img/consul_nginx_web_ui.png)
 
 测试服务是否正常执行，此程序会向服务发送任务。
 ```
